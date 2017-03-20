@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NY Times Explorer</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_article_detail">ArticleDetailActivity</string>
+    <string name="loading">Loading...</string>
+    <string name="file_not_found"> file not found.</string>
+    <string name="search_parameters">Search Parameters</string>
+    <string name="show_highlights">Highlight query in results</string>
+    <string name="sports">Sports</string>
+    <string name="fashion"><![CDATA[Fashion & Style]]></string>
+    <string name="arts">Arts</string>
+    <string name="begin_date">Begin Date</string>
+    <string name="end_date">End Date</string>
+    <string name="categories">Categories</string>
+    <string name="sort_order">Sort Order</string>
+    <string name="ellipse">...</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cannot_write_file">Cannot write file</string>
+
+</resources>

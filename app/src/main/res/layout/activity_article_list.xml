@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ArticleListActivity"
+    android:fitsSystemWindows="true" >
+
+<!--
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="?attr/colorPrimary" >
+    </android.support.v7.widget.Toolbar>
+-->
+
+    <!-- Load the toolbar here -->
+    <include
+        layout="@layout/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <GridView
+        android:id="@+id/gvArticles"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:numColumns="3" />
+
+</RelativeLayout>
+
+<!--
+    &lt;!&ndash; CoordinatorLayout is used to create scrolling and "floating" effects within a layout &ndash;&gt;
+    &lt;!&ndash; This is typically the root layout which wraps the app bar and content &ndash;&gt;
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/main_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    &lt;!&ndash; AppBarLayout is a wrapper for a Toolbar in order to apply scrolling effects. &ndash;&gt;
+    &lt;!&ndash; Note that AppBarLayout expects to be the first child nested within a CoordinatorLayout &ndash;&gt;
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        &lt;!&ndash; Toolbar is the actual app bar with text and the action items &ndash;&gt;
+&lt;!&ndash;
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways" />
+&ndash;&gt;
+        <include
+            layout="@layout/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </android.support.design.widget.AppBarLayout>
+
+    &lt;!&ndash; This could also be included from another file using the include tag &ndash;&gt;
+    &lt;!&ndash; i.e `res/layout/content_main.xml` &ndash;&gt;
+    &lt;!&ndash; `app:layout_behavior` is set to a pre-defined standard scrolling behavior &ndash;&gt;
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    </android.support.v7.widget.RecyclerView>
+
+
+</android.support.design.widget.CoordinatorLayout>
+-->
